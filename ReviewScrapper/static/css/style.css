@@ -1,0 +1,44 @@
+body {
+  margin: 1.5em;
+}
+
+div{
+  display: block;
+  position: relative;
+  height: 100px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  font-style: italic; 
+}
+
+.product_table{
+  border-radius: 1em;
+  /*border-collapse: collapse;*/
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.product_table th, td {
+  padding: 15px;
+  color: #1289A7;
+}
+
+
+.product_table th{
+  background-color: #95d7e7;
+  
+}
+
+.product_table tr:nth-child(odd){
+  background: #fff;
+}
+
+.product_table tr:nth-child(even){
+  background: #d9e9ee;
+}

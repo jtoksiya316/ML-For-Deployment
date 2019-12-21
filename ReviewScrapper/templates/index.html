@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class='heading'>
+	<h2>Flipkart's Product Review using Text Scrapping</h2>
+</div>
+
+<div class="form-group">
+	<form method='post' action='/reviews'>
+	    <input type="text" name="product_name" id="search_product" autocomplete="off" placeholder="Search Product">
+	    <input type="submit" id="search_btn" value='Search'>
+	</form>
+</div>
+
+{% endblock %}
