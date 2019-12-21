@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class='heading'>
+	<h2>Download image using Image Scrapping</h2>
+</div>
+
+<div class="form-group">
+	<form method='post' action='/searchImages'>
+	    <input type="text" name="search_str" id="search_product" autocomplete="off" required="" placeholder="Enter search Keyword">
+	    <input type="submit" id="search_btn" value='Search'>
+	</form>
+</div>
+
+{% endblock %}
